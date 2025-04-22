@@ -11,7 +11,7 @@ export default function CreateProposalPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
 
-  const { address } = useAccount(); // 获取当前钱包地址（可自己封装）
+  const { address } = useAccount(); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ export default function CreateProposalPage() {
     setMessage("");
 
     try {
-      await createProposal(description, duration);
+      await createProposal(address,description, duration);
       setMessage("✅ 提案发布成功！");
       setDescription("");
     } catch (err) {

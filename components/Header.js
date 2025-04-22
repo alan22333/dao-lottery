@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useAccount } from "@/hooks/useAccount";
-import { claimGovToken } from "@/lib/viem";
+import { claimGovToken, hasClaimed } from "@/lib/viem";
 import ConnectWallet from "./ConnectWallet";
 
 export default function Header() {
@@ -29,6 +29,15 @@ export default function Header() {
       setClaiming(false);
     }
   };
+
+  useEffect(() => {
+    if (address) {
+      hasClaimed(address).then((res) => {
+        setClaimed(res);
+      });
+    }
+  }, [address]);
+
 
   return (
     <header className="w-full px-6 py-4 flex justify-between items-center border-b border-gray-700 bg-black text-white">

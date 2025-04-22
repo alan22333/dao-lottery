@@ -1,8 +1,10 @@
 "use client";
 
+import { hasClaimed } from "@/lib/viem";
 import { useEffect, useState } from "react";
 export function useAccount() {
   const [address, setAddress] = useState(null);
+  const [claimed, setClaimed] = useState(false);
 
   useEffect(() => {
     const checkConnection = async () => {
@@ -13,6 +15,9 @@ export function useAccount() {
           });
           if (accounts.length > 0) {
             setAddress(accounts[0]);
+            await hasClaimed(accounts[0]).then((res) => {
+              setClaimed(res);
+            });
           }
         } catch (err) {
           console.error("获取账户失败:", err);
@@ -42,5 +47,5 @@ export function useAccount() {
     };
   }, []);
 
-  return { address };
+  return { address,claimed};
 }

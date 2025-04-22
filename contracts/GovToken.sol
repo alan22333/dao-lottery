@@ -31,6 +31,10 @@ contract GovToken is ERC20, Ownable, ERC20Burnable {
         _mint(msg.sender, CLAIM_AMOUNT);
     }
 
+    function checkClaimed() external view returns(bool){
+        return hasClaimed[msg.sender];
+    }
+
     function setMinner(address _addr,bool _isMinner)external onlyOwner(){
         isMinner[_addr] = _isMinner;
     }

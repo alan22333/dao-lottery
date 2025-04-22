@@ -300,6 +300,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "checkClaimed",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "claim",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -721,11 +734,11 @@
 			]
 		},
 		"contracts/GovToken.sol": {
-			"keccak256": "0x2b14d463bee9c7393a5fb5638102d1bf5beaf621218986919c3993c8791d7195",
+			"keccak256": "0x6f77e7ca56fb9fd6b86e8aff4974d9ebded80ede34cda11d64331333b1affcff",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b3aff2999fb83e1e09f9f3dd66c2b974279ca52d83b79743c00c89b253b64e33",
-				"dweb:/ipfs/QmUYrbXjc8b9dpQKmUyanrsqtteSGiocp3Dz5HVcudET1p"
+				"bzz-raw://03a27f8d8a527d1a08e4146ac402021322f036eaac6ce70794bf7078cbe7c2fd",
+				"dweb:/ipfs/QmbdzBXNVi28QrAPU4yastJSTfbVk4ywf7V4Z3aWwKVHTq"
 			]
 		}
 	},
