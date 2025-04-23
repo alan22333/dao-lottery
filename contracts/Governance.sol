@@ -123,6 +123,15 @@ contract Governance is Ownable{
         );
     }
 
+    function hasUserVoted(uint8 _proposalId, address _user) external view returns (bool) {
+        require( _proposalId <= proposalCount, "Invalid proposal ID");
+        return proposals[_proposalId].hasVoted[_user];
+    }
+    function getVoteChoice(uint8 _proposalId, address _user) external view returns (bool) {
+        require( _proposalId <= proposalCount, "Invalid proposal ID");
+        require(proposals[_proposalId].hasVoted[_user], "User has not voted");
+        return proposals[_proposalId].voteChoice[_user];
+    }
     function getProposalCount() external view returns(uint8){
         return proposalCount;
     }
