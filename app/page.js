@@ -8,16 +8,8 @@ import Link from "next/link";
 
 export default function HomePage() {
 
-  const [showNewProposal, setShowNewProposal] = useState(false);
-  const handleNewProposal = async () => {
-    setShowNewProposal(true);
-    alert("New Proposal");
-  };
-
   return (
     <main className="min-h-screen bg-black text-white">
-      <Header/>
-
       <section className="container mx-auto px-4 py-8">
         <Link href={"/create"}>
           <button className="text-3xl font-bold mb-6">🤖 发布提案</button>
@@ -27,7 +19,6 @@ export default function HomePage() {
         <h1 className="text-3xl font-bold mb-6">🎯 当前提案</h1>
         <ProposalList />
       </section>
-      <Footer />
     </main>
   );
 }

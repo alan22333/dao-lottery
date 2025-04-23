@@ -70,6 +70,38 @@
 						"type": "uint8"
 					}
 				],
+				"name": "_getWinner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_proposalId",
+						"type": "uint8"
+					}
+				],
+				"name": "claimReward",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_proposalId",
+						"type": "uint8"
+					}
+				],
 				"name": "drawWinner",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -91,6 +123,25 @@
 			{
 				"inputs": [],
 				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proposalWinner",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -293,35 +344,35 @@
 			]
 		},
 		"contracts/GovToken.sol": {
-			"keccak256": "0x0a2c13ca2dcc8dfe2b0ec3c3793a9705d452a557ef83b43d193d40fde7b6d2ce",
+			"keccak256": "0x6f77e7ca56fb9fd6b86e8aff4974d9ebded80ede34cda11d64331333b1affcff",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c1e837f97b8fc92665cf88a0dbdae43d95c79715e9d3b4a491ba78803d807110",
-				"dweb:/ipfs/QmZkntRMRSsSxZBJ7W59J5hnMKWjfgqgzjcSQmM2G9eszi"
+				"bzz-raw://03a27f8d8a527d1a08e4146ac402021322f036eaac6ce70794bf7078cbe7c2fd",
+				"dweb:/ipfs/QmbdzBXNVi28QrAPU4yastJSTfbVk4ywf7V4Z3aWwKVHTq"
 			]
 		},
 		"contracts/Governance.sol": {
-			"keccak256": "0xf3a3ae62e051c917ed5fec3f77af4f3fc64b6dc74fc89bf3db28d68eceefc443",
+			"keccak256": "0xbdd454ee6d1b65b8ec535cf20b0cdc665526aed57fa34ef88046fcf55d34893f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1c1a454adfca9cd3a3d0fc49ce6d019966482e2c9e526790f3f7da2c25d54b8",
-				"dweb:/ipfs/QmTrXkhgeQsvnJPSWtB6ZUAMEAjmmmEEjWA5JQcDps8D3T"
+				"bzz-raw://06d8d3d0c9ef0cb69a8e08c4a0fc7e336751525de27e76382b0fd4d42bf3cbee",
+				"dweb:/ipfs/QmeftGfEjVzj1keLENDvudhqGwJQFiZAUQ83Vu4Za9M3FB"
 			]
 		},
 		"contracts/Lottery.sol": {
-			"keccak256": "0x05ff4f2a3709c8b8bc07be1350118a1da537b4c632dd15810b41c252719e3d78",
+			"keccak256": "0x3526942dc4ca2dd2f2ccdf8bb49020063eedf7a7747dae83314927307be58cba",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aacd014d932b28a424acb7e16d113e916bec6d7d488811633fa94f8358d957aa",
-				"dweb:/ipfs/QmeYMxJQ4m32ewu5xAmxeBkidcacuRNiC9W19D4udhWGcg"
+				"bzz-raw://5f98d71d5bfcbb3faac445b4c23a710915853a72276ee63d8e6a066e90ea75ce",
+				"dweb:/ipfs/QmaSuth9XDgJuND5GBqkC5ijXPKG2KDLL3b528F7LA6Vsc"
 			]
 		},
 		"contracts/RewardToken.sol": {
-			"keccak256": "0x176d1a2098773b36896ee9d89020827fed790d544290b9930df4f4dda47a4f8c",
+			"keccak256": "0x404d65e36192fd8621e6acd575c8267e2e34ba53ff365465147c8d616a67f065",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fec606b440fb3f16676a60e2857cbc07473a32ecf2371b252d82e12e2f4b9fa5",
-				"dweb:/ipfs/Qma7TChCQ3pRjakJ1Hkuc9tsVmGwPV1yCLZYRq1iUqABUN"
+				"bzz-raw://57ee2ea1bc6dba0232199f1067bf3c20b197037512fa1c221cdf3ce1bab3ca74",
+				"dweb:/ipfs/QmSvGTrKqkvNeiTBePB92DkRdVV38gJrZP6zdLjxmBQS3v"
 			]
 		}
 	},
