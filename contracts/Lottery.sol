@@ -13,6 +13,8 @@ contract Lottery is Ownable{
     // reward record
     mapping(uint => address) public proposalWinner;
 
+    mapping(uint => bool) public hasClaimed;
+
     uint public rewardAmount = 100;
 
     constructor(address _rewardToken,address _governance) Ownable(msg.sender) {
@@ -34,9 +36,6 @@ contract Lottery is Ownable{
         // update winner
         address winner = eligibleVoters[winnerIndex];
         _setWinner(_proposalId,winner);
-
-        // rewardToken.mint(winner,rewardAmount);
-        // governance.rewardVoter(winner, 1);
     }
 
     // pull over push => pull: 用户主动领取，push: 智能合约主动推送
@@ -45,6 +44,8 @@ contract Lottery is Ownable{
     function claimReward(uint8 _proposalId) external {
         address winner = _getWinner(_proposalId);
         require(winner == msg.sender, "Not the winner");
+
+        hasClaimed[_proposalId] = true;
 
         rewardToken.mint(winner,rewardAmount);
         governance.rewardVoter(winner, 11);
@@ -69,5 +70,9 @@ contract Lottery is Ownable{
 
     function _getWinner(uint8 _proposalId) public view returns(address){
         return proposalWinner[_proposalId];
+    }
+
+    function getCliaimed(uint8 _proposalId) external view returns(bool){
+        return hasClaimed[_proposalId];
     }
 }

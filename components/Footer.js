@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="container mx-auto">
         <p>© {new Date().getFullYear()} DAO 抽奖系统. All rights reserved.</p>
         <p className="mt-1">
-          由 ❤️ 构建，使用 Next.js + Solidity + viem 技术栈
+          由 🥵 alan 设计构建，使用 Next.js + Solidity + viem 技术栈
         </p>
       </div>
     </footer>
