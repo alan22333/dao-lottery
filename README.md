@@ -2,7 +2,14 @@
 
 A decentralized governance-based lottery system that encourages community participation through voting and token rewards.
 
-![](https://pic1.imgdb.cn/item/680a52cf58cb8da5c8c93a9e.png)
+![create](https://pic1.imgdb.cn/item/680b1e9d58cb8da5c8ca9f3f.png)
+![list](https://pic1.imgdb.cn/item/680b1eec58cb8da5c8caa040.png)
+![detail](https://pic1.imgdb.cn/item/680b1f8658cb8da5c8caa3de.png)
+![vote](https://pic1.imgdb.cn/item/680b1f9d58cb8da5c8caa4ae.png)
+![admin](https://pic1.imgdb.cn/item/680b207658cb8da5c8caa740.png)
+![drawWinner](https://pic1.imgdb.cn/item/680b211058cb8da5c8caacfc.png)
+![claim](https://pic1.imgdb.cn/item/680b215558cb8da5c8caafbc.png)
+![profile](https://pic1.imgdb.cn/item/680b21ca58cb8da5c8cab059.png)
 
 ---
 
@@ -55,10 +62,14 @@ npm install
 Create a `.env.local` file based on `.env.example` and fill in the required contract addresses:
 
 ```env
-NEXT_PUBLIC_GOV_TOKEN=0x...
-NEXT_PUBLIC_REWARD_TOKEN=0x...
-NEXT_PUBLIC_GOVERNANCE=0x...
-NEXT_PUBLIC_LOTTERY=0x...
+NEXT_PUBLIC_GOV_TOKEN_ADDRESS="0x.."
+NEXT_PUBLIC_REWARD_TOKEN_ADDRESS="0x.."
+NEXT_PUBLIC_GOVERNANCE_ADDRESS="0x.."
+NEXT_PUBLIC_LOTTERY_ADDRESS="0x.."
+
+NEXT_PUBLIC_ADMIN_ADDRESS="0x.."
+
+NEXT_PUBLIC_CHAIN_ID="31337"
 ```
 
 ### 🧪 Local Development
@@ -92,7 +103,14 @@ npx hardhat deploy --network <your-network>
 
 ## 📸 UI Previews
 
-> You can add screenshots here to showcase your interface.
+![create](https://pic1.imgdb.cn/item/680b1e9d58cb8da5c8ca9f3f.png)
+![list](https://pic1.imgdb.cn/item/680b1eec58cb8da5c8caa040.png)
+![detail](https://pic1.imgdb.cn/item/680b1f8658cb8da5c8caa3de.png)
+![vote](https://pic1.imgdb.cn/item/680b1f9d58cb8da5c8caa4ae.png)
+![admin](https://pic1.imgdb.cn/item/680b207658cb8da5c8caa740.png)
+![drawWinner](https://pic1.imgdb.cn/item/680b211058cb8da5c8caacfc.png)
+![claim](https://pic1.imgdb.cn/item/680b215558cb8da5c8caafbc.png)
+![profile](https://pic1.imgdb.cn/item/680b21ca58cb8da5c8cab059.png)
 
 ---
 
