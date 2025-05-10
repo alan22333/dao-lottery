@@ -734,11 +734,11 @@
 			]
 		},
 		"contracts/GovToken.sol": {
-			"keccak256": "0x6f77e7ca56fb9fd6b86e8aff4974d9ebded80ede34cda11d64331333b1affcff",
+			"keccak256": "0xc8243710ac8c480421638102782c2e8a68996f54d2d3360c07f7e26a7ef33490",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://03a27f8d8a527d1a08e4146ac402021322f036eaac6ce70794bf7078cbe7c2fd",
-				"dweb:/ipfs/QmbdzBXNVi28QrAPU4yastJSTfbVk4ywf7V4Z3aWwKVHTq"
+				"bzz-raw://5f7e71f1274e434690b04765a1e570a2a1281bf604cee128effb68c1379a74fb",
+				"dweb:/ipfs/QmU5JUHbS5n4URCubqhh12oZSB3PYLhRnNAxcucVj2Anu5"
 			]
 		}
 	},

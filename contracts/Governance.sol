@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.19;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./GovToken.sol";
 import "./RewardToken.sol";
@@ -29,7 +29,7 @@ contract Governance is Ownable{
     uint8 public proposalCount;
     // uint256 public constant VOTING_DURATION = 7 days;
 
-    constructor(address _govToken) Ownable(msg.sender) {
+    constructor(address _govToken){
         govToken = GovToken(_govToken);
         FEE = 10;
     }

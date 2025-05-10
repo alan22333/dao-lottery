@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.19;
 
 import "./RewardToken.sol";
 import "./Governance.sol";
@@ -17,7 +17,7 @@ contract Lottery is Ownable{
 
     uint public rewardAmount = 100;
 
-    constructor(address _rewardToken,address _governance) Ownable(msg.sender) {
+    constructor(address _rewardToken,address _governance) {
         rewardToken = RewardToken(_rewardToken);    
         governance = Governance(_governance);
     }
