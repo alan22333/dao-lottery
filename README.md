@@ -1,5 +1,7 @@
 # 🗳️ DAO Lottery System
 
+喜报：小项目助我拿下了波卡社区的小黑客松比赛第一名和500U奖励，美滋滋🤪
+
 A decentralized governance-based lottery system that encourages community participation through voting and token rewards.
 
 ![profile](https://pic1.imgdb.cn/item/680b21ca58cb8da5c8cab059.png)
